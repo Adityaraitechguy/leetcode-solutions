@@ -30,29 +30,30 @@ Follow up: Could you minimize the total number of operations done?
 ## Solution
 
 **Language:** Java  
-**Runtime:** 0 ms  
-**Memory:** 42.8 MB  
-**Submitted:** 2026-08-17T17:15:05.941Z  
+**Runtime:** 2 ms (beats 91.98%)  
+**Memory:** 47.5 MB (beats 93.75%)  
+**Submitted:** 2026-08-17T17:15:12.555Z  
 
 ```java
-        int index = 0;
-        
-        for (int i =0;i<nums.length;i++){
-            if(nums[i] != 0){
-        }
-                temp[index] = nums[i];
-            }
-                index++;
+class Solution {
+    public void moveZeroes(int[] nums) {
+        int[] temp = new int [nums.length];
 
-        for (int i=0;i<nums.length;i++){
-            nums[i]=temp[i];
-        }
-    }
+        int index = 0;
+        
+        for (int i =0;i<nums.length;i++){
+            if(nums[i] != 0){
+                temp[index] = nums[i];
+                index++;
+            }
+        }
 
-        int[] temp = new int [nums.length];
+        for (int i=0;i<nums.length;i++){
+            nums[i]=temp[i];
+        }
 
+    }
 }
-
 ```
 
 ---
