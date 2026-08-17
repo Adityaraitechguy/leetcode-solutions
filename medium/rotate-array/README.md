@@ -10,26 +10,27 @@ _Description not available._
 
 **Language:** Java  
 **Runtime:** 0 ms  
-**Memory:** 42.8 MB  
-**Submitted:** 2026-08-17T16:46:36.759Z  
+**Memory:** 42.4 MB  
+**Submitted:** 2026-08-17T16:46:06.237Z  
 
 ```java
-import java.util.*;
-
 class Solution {
     public void rotate(int[] nums, int k) {
         int n = nums.length;
         k = k % n;
-        Deque<Integer> deque = new ArrayDeque<>();
-        for (int num : nums) deque.add(num);
+        int count = 0;
         
-        for (int i = 0; i < k; i++) {
-            deque.addFirst(deque.removeLast());
-        }
-        
-        int idx = 0;
-        for (int num : deque) {
-            nums[idx++] = num;
+        for (int start = 0; count < n; start++) {
+            int current = start;
+            int prev = nums[start];
+            do {
+                int next = (current + k) % n;
+                int temp = nums[next];
+                nums[next] = prev;
+                prev = temp;
+                current = next;
+                count++;
+            } while (start != current);
         }
     }
 }
