@@ -43,19 +43,27 @@ Constraints:
 ## Solution
 
 **Language:** Java  
-**Runtime:** 0 ms  
-**Memory:** 41.6 MB  
-**Submitted:** 2026-08-18T06:57:37.474Z  
+**Runtime:** 0 ms (beats 100.00%)  
+**Memory:** 42.3 MB (beats 16.29%)  
+**Submitted:** 2026-08-18T06:57:41.948Z  
 
 ```java
 class Solution {
     public int fib(int n) {
-        
-        if (n == 0) return 0;
-        if (n == 1) return 1;
-        
-        
-        return fib(n - 1) + fib(n - 2);
+        if(n<=1){
+            return n;
+        }
+
+        int prev2=0;
+        int prev1=1;
+        int current =0;
+
+        for (int i = 2;i<=n;i++){
+            current = prev1+ prev2;
+            prev2=prev1;
+            prev1=current;
+        }
+        return current;
     }
 
 
