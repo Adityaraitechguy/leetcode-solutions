@@ -30,9 +30,9 @@ Constraints:
 ## Solution
 
 **Language:** Java  
-**Runtime:** 0 ms  
-**Memory:** 42.5 MB  
-**Submitted:** 2026-08-18T10:44:10.433Z  
+**Runtime:** 3 ms (beats 59.17%)  
+**Memory:** 52.7 MB (beats 10.59%)  
+**Submitted:** 2026-08-18T10:45:29.315Z  
 
 ```java
 class Solution {
@@ -40,7 +40,7 @@ class Solution {
         int count =0;
         int maxi =0;
         for (int i=0;i<nums.length;i++){
-            if (nums[i]==0){
+            if (nums[i]==1){
                 count++;
             }
             else{
