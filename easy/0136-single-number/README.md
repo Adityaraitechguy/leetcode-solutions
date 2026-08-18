@@ -44,25 +44,19 @@ Constraints:
 ## Solution
 
 **Language:** Java  
-**Runtime:** 0 ms  
-**Memory:** 42.2 MB  
-**Submitted:** 2026-08-18T11:05:41.289Z  
+**Runtime:** 1 ms (beats 99.94%)  
+**Memory:** 46.9 MB (beats 65.81%)  
+**Submitted:** 2026-08-18T11:07:18.955Z  
 
 ```java
 class Solution {
     public int singleNumber(int[] nums) {
-        for (int i =0;i<nums.length;i++){
-            int count=0;
-            int num = nums[i];
-            for (int j =0; j<nums.length;j++){
-                if(nums[i]==nums[j]){
-                    count++;
-                }
-                
-            }
-            if (count==1) return num;
+        int result=0;
+        for(int num:nums){
+            result = result^num ;
         }
-        return -1;
+
+        return result;
         
     }
             
