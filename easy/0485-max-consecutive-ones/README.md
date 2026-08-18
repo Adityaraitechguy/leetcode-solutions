@@ -31,8 +31,8 @@ Constraints:
 
 **Language:** Java  
 **Runtime:** 0 ms  
-**Memory:** 42.6 MB  
-**Submitted:** 2026-08-18T10:37:06.085Z  
+**Memory:** 42.5 MB  
+**Submitted:** 2026-08-18T10:37:57.258Z  
 
 ```java
 class Solution {
@@ -44,9 +44,6 @@ class Solution {
             }
         }
         return count;
-            else{
-                count = 0;
-            }
     }
 }
 
