@@ -32,7 +32,7 @@ Constraints:
 **Language:** Java  
 **Runtime:** 0 ms  
 **Memory:** 42.5 MB  
-**Submitted:** 2026-08-18T10:41:45.920Z  
+**Submitted:** 2026-08-18T10:43:04.576Z  
 
 ```java
 class Solution {
@@ -45,7 +45,7 @@ class Solution {
         }
         return maxi;
         int maxi =0;
-        Math.max(maxi, count);
+        maxi= Math.max(maxi, count);
             else{
                 count =0;
             }
