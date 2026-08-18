@@ -44,16 +44,16 @@ Constraints:
 ## Solution
 
 **Language:** Java  
-**Runtime:** 0 ms  
-**Memory:** 42 MB  
-**Submitted:** 2026-08-18T11:08:10.206Z  
+**Runtime:** 1 ms (beats 99.94%)  
+**Memory:** 46.6 MB (beats 96.48%)  
+**Submitted:** 2026-08-18T11:08:15.796Z  
 
 ```java
 class Solution {
     public int singleNumber(int[] nums) {
         int result=0;
-        for(int num:nums){
-            result = result^num ;
+        for(int i=0;i<nums.length;i++){
+            result = result^nums[i] ;
         }
 
         return result;
