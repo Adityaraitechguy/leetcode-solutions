@@ -6,6 +6,8 @@ class Solution {
                 count++;
             }
         }
-        return count;
+        return maxi;
     }
+        int maxi =0;
+        Math.max(maxi, count);
 }
