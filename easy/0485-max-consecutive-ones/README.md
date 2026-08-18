@@ -31,8 +31,8 @@ Constraints:
 
 **Language:** Java  
 **Runtime:** 0 ms  
-**Memory:** 42.5 MB  
-**Submitted:** 2026-08-18T10:37:57.258Z  
+**Memory:** 42.7 MB  
+**Submitted:** 2026-08-18T10:40:25.919Z  
 
 ```java
 class Solution {
@@ -43,8 +43,10 @@ class Solution {
                 count++;
             }
         }
-        return count;
+        return maxi;
     }
+        int maxi =0;
+        Math.max(maxi, count);
 }
 
 ```
