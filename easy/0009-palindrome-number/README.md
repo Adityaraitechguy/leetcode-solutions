@@ -43,24 +43,20 @@ Follow up: Could you solve it without converting the integer to a string?
 **Language:** Java  
 **Runtime:** 0 ms  
 **Memory:** 41.9 MB  
-**Submitted:** 2026-08-18T05:25:14.284Z  
+**Submitted:** 2026-08-18T05:58:56.995Z  
 
 ```java
-            int lastDigit = x % 10;
-            x /= 10;
-            
-            rev = rev * 10 + lastDigit;
-            
-        while (x != 0) {
-        
-        int rev = 0;
+class Solution {
     public boolean isPalindrome(int x) {
-        }
-        if ( x == rev){
+        String str = String.valueOf(x);
+        for (int i =0;i<str.length()/2;i++){
+            if (str.charAt(i)==str.charAt(str.length()-1-i)){
+                
+            }
             return true;
         }
-    }
         return false;
+    }
 }
 
 ```
