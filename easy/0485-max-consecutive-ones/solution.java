@@ -8,7 +8,7 @@ class Solution {
         }
         return maxi;
         int maxi =0;
-        maxi= Math.max(maxi, count);
+        Math.max(maxi, count);
             else{
                 count =0;
             }
