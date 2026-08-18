@@ -31,22 +31,25 @@ Constraints:
 
 **Language:** Java  
 **Runtime:** 0 ms  
-**Memory:** 42.7 MB  
-**Submitted:** 2026-08-18T10:40:25.919Z  
+**Memory:** 42.5 MB  
+**Submitted:** 2026-08-18T10:41:45.920Z  
 
 ```java
 class Solution {
     public int findMaxConsecutiveOnes(int[] nums) {
         int count =0;
-        for (int i=1;i<nums.length;i++){
-            if (nums[i-1]==nums[i]){
+        for (int i=0;i<nums.length;i++){
+            if (nums[i]==1){
                 count++;
             }
         }
         return maxi;
-    }
         int maxi =0;
         Math.max(maxi, count);
+            else{
+                count =0;
+            }
+    }
 }
 
 ```
