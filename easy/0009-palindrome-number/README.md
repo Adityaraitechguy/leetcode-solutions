@@ -43,7 +43,7 @@ Follow up: Could you solve it without converting the integer to a string?
 **Language:** Java  
 **Runtime:** 0 ms  
 **Memory:** 41.9 MB  
-**Submitted:** 2026-08-18T05:59:33.179Z  
+**Submitted:** 2026-08-18T06:01:40.829Z  
 
 ```java
 class Solution {
@@ -53,10 +53,12 @@ class Solution {
             if (str.charAt(i)!=str.charAt(str.length()-1-i)){
                 
             }
-            return false;
+            
         }
         return true;
     }
+        
+                return false;
 }
 
 ```
