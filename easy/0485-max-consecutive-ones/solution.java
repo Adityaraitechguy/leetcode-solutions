@@ -7,8 +7,5 @@ class Solution {
             }
         }
         return count;
-            else{
-                count = 0;
-            }
     }
 }
