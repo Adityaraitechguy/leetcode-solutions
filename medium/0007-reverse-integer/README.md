@@ -37,26 +37,25 @@ Constraints:
 
 **Language:** Java  
 **Runtime:** 0 ms  
-**Memory:** 42.2 MB  
-**Submitted:** 2026-08-18T04:47:04.999Z  
+**Memory:** 42.3 MB  
+**Submitted:** 2026-08-18T04:50:02.263Z  
 
 ```java
         while (x != 0) {
             int lastDigit = x % 10;
             x /= 10;
-            
-            // Check for overflow before multiplying by 10 and adding lastDigit
             if (rev > Integer.MAX_VALUE / 10 || (rev == Integer.MAX_VALUE / 10 && lastDigit > 7)) {
-                return 0; // Overflow for positive numbers
+                return 0; 
             }
             if (rev < Integer.MIN_VALUE / 10 || (rev == Integer.MIN_VALUE / 10 && lastDigit < -8)) {
-                return 0; // Underflow for negative numbers
+                return 0; 
             }
-            
             rev = rev * 10 + lastDigit;
         }
         
+        
         return rev;
+
     }
 }
 
