@@ -40,24 +40,25 @@ Constraints:
 
 **Language:** Java  
 **Runtime:** 0 ms  
-**Memory:** 42.6 MB  
-**Submitted:** 2026-08-20T19:02:40.056Z  
+**Memory:** 42.4 MB  
+**Submitted:** 2026-08-20T19:05:47.407Z  
 
 ```java
-class Solution {
-    public int searchInsert(int[] nums, int target) {
         int n = nums.length;
-        for (int i =1;i<n;i++){
+        for (int i =0;i<n;i++){
             if (nums[i]==target){
                 return i;
             }
         }
         
-        
-        return 1;
-            else if (target>nums[i-1]&&target<nums[i]){
-                return i;
+    return 1;
+        for (int i =0;i<n;i++){
+            for (int j=1;j<n;j++){
+        }
+                if (target>nums[i]&&target<nums[j])
             }
+                return i;
+        
     }
 }
 
